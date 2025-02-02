@@ -14,25 +14,79 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#start">Start</a>
-    </nav>
+    <header>
+        <img src="logo.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#Willkommen">Willkommen</a></li>
+                <li><a href="#uber-mich">Über mich</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="Willkommen">
+        <section style="background-image: url('1.jpg');">
         <h1>Willkommen auf meine Portfolio!</h1>
         <p>Hier findes Du spanende PROJEKTE, Infos über mich und Möglischkeit mich zu kontaktieren.</p>
     </section>
 
     <section id="Über mich">
         <h2>Über mich</h2>
+        <p>Neben meinem technischen Verständnis habe ich ein Auge für Details und arbeite strukturiert, um komplexe Anforderungen in einfache und funktionale Designs zu übersetzen. Ob Prototyping, Usability-Testing oder die Optimierung bestehender Interfaces – ich gehe jede Herausforderung mit einem lösungsorientierten Mindset an. Mein Ziel ist es, digitale Produkte zu gestalten, die Menschen wirklich helfen und ein positives Erlebnis bieten.</p>
+        <img src="mein-foto.jpg" alt="Mein Foto">    
     </section>
 
     <section id="Meine Portfolio">
         <h2>Meine Portfolio</h2>
+        <article>
+            <a href="projekt1.html">
+                <h3>Projekt 1</h3>
+                <img src="projekt1.jpg" alt="Projekt 1">
+            </a>
+        </article>
+        <article>
+            <a href="projekt2.html">
+                <h3>Projekt 2</h3>
+                <img src="projekt2.jpg" alt="Projekt 2">
+            </a>
+        </article>
+        <article>
+            <a href="projekt3.html">
+                <h3>Projekt 3</h3>
+                <img src="projekt3.jpg" alt="Projekt 3">
+            </a>
+        </article>
     </section>
 
     <section id="Kontakt">
         <h2>Kontakt</h2>
+        <form>
+            <label for="Name">Name</label><br>
+            <input type="text" id="Name" name="Name"><br>
+            <label for="Vorname">Vorname</label><br>
+            <input type="Vorname" id="Vorname" name="Vorname">
+          </form>
+          <textarea name="message" rows="10" cols="30">
+            Screben Sie deine Nachricht.
+          </textarea>
+          <button type="button" onclick="alert('LiLook')">Absenden</button>
+           </form>
+            <p>Email: name@email.com</p>
+            <p>Tel: 123456789</p>
+          <a href="https://www.facebook.com/elizaveta.lukinikh/">
+          <img src="smiley.gif" alt="Facebook" style="width:64px;height:64px;">
+          </a>
+          <a href="https://www.instagram.com/lillook/">
+          <img src="smiley.gif" alt="Instagram" style="width:64px;height:64px;">
+          </a>
+          <a href="https://www.behance.net/f824e1c0/">
+          <img src="smiley.gif" alt="Behance" style="width:64px;height:64px;">
+          </a>
+           <a href="www.linkedin.com/in/elizaveta-lukinykh-975230240">
+          <img src="smiley.gif" alt="LinkdIn" style="width:64px;height:64px;">
+          </a>
     </section>
     
     <footer>
