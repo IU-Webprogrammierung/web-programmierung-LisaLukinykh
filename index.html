@@ -5,132 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiLooK</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background: #333;
-            color: white;
-            padding: 10px;
-            position: sticky;
-            top: 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 50px;
-            height: 100vh;
-        }
-
-        #start {
-            background: #f4f4f4;
-        }
-
-        Footer {
-            background: #333;
-            color: white;
-            padding: 10px;
-            position: sticky;
-            bottom: 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/mediaQueries.css">
 </head>
 
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo">
+        <img src="images/logo.png" alt="LiLook Logo">
         <nav>
-            <ul>
-                <li><a href="#Willkommen">Willkommen</a></li>
-                <li><a href="#uber-mich">Über mich</a></li>
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+            <a href="#Willkommen">Willkommen</a>
+            <a href="#Über-mich">Über mich</a>
+            <a href="#Projekte">Projekte</a>
+            <a href="#Kontakt">Kontakt</a>
         </nav>
     </header>
 
     <section id="Willkommen">
-        <section style="background-image: url('1.jpg');">
-            <h1>Willkommen auf meine Portfolio!</h1>
-            <p>Hier findes Du spanende PROJEKTE, Infos über mich und Möglischkeit mich zu kontaktieren.</p>
-        </section>
+        <h1>Willkommen auf meinem Portfolio!</h1>
+        <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
+    </section>
 
-        <section id="Über mich">
-            <h2>Über mich</h2>
-            <p>Neben meinem technischen Verständnis habe ich ein Auge für Details und arbeite strukturiert, um komplexe
-                Anforderungen in einfache und funktionale Designs zu übersetzen. Ob Prototyping, Usability-Testing oder
-                die Optimierung bestehender Interfaces – ich gehe jede Herausforderung mit einem lösungsorientierten
-                Mindset an. Mein Ziel ist es, digitale Produkte zu gestalten, die Menschen wirklich helfen und ein
-                positives Erlebnis bieten.</p>
-            <img src="mein-foto.jpg" alt="Mein Foto">
-        </section>
+    <section id="Über-mich">
+        <div class="two-column-grid">
+            <div class="left-column">
+                <h2>Über mich</h2><br>
+                <article class="about-text">
+                    <p>Neben meinem technischen Verständnis habe ich ein Auge für Details und arbeite strukturiert, um
+                        komplexe Anforderungen in einfache und funktionale Designs zu übersetzen. Ob Prototyping,
+                        Usability-Testing oder die Optimierung bestehender Interfaces – ich gehe jede Herausforderung
+                        mit einem lösungsorientierten Mindset an.
+                    </p>
+                    <p>Mein Ziel ist es, digitale Produkte zu gestalten, die Menschen wirklich helfen und ein
+                        positives Erlebnis bieten.
+                    </p>
+                </article>
+            </div>
+            <div class="right-column">
+                <div class="about-image">
+                    <img src="images/foto.JPG" alt="LiLook Foto">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="Meine Portfolio">
-            <h2>Meine Portfolio</h2>
-            <article>
-                <a href="projekt1.html">
-                    <h3>Projekt 1</h3>
-                    <img src="projekt1.jpg" alt="Projekt 1">
-                </a>
+    <section id="Projekte">
+        <h2>Projekte</h2>
+        <div class="projekt-cards">
+            <article class="card">
+                <div class="card-content">
+                    <img src="projekt1.jpg" alt="X cars Unternehmensoftware" class="card-image">
+                    <div class="card-info">
+                        <h3>X CARS</h3>
+                        <p class="card-description">Unternehmensoftware</p>
+                        <a href="xcars.html" class="card-link">Mehr</a>
+                    </div>
+                </div>
             </article>
-            <article>
-                <a href="projekt2.html">
-                    <h3>Projekt 2</h3>
-                    <img src="projekt2.jpg" alt="Projekt 2">
-                </a>
+
+            <article class="card">
+                <div class="card-content">
+                    <img src="projekt2.jpg" alt="Villa Oliva Webpräsenz" class="card-image">
+                    <div class="card-info">
+                        <h3>Villa Oliva</h3>
+                        <p class="card-description">Webpräsenz</p>
+                        <a href="oliva.html" class="card-link">Mehr</a>
+                    </div>
+                </div>
             </article>
-            <article>
-                <a href="projekt3.html">
-                    <h3>Projekt 3</h3>
-                    <img src="projekt3.jpg" alt="Projekt 3">
-                </a>
+
+            <article class="card">
+                <div class="card-content">
+                    <img src="projekt3.jpg" alt="IP Telekom Projekt" class="card-image">
+                    <div class="card-info">
+                        <h3>IP Telekom</h3>
+                        <p class="card-description">Telekommunikation</p>
+                        <a href="ip.html" class="card-link">Mehr</a>
+                    </div>
+                </div>
             </article>
-        </section>
+    </section>
 
-        <section id="Kontakt">
-            <h2>Kontakt</h2>
-            <form>
-                <label for="Name">Name</label><br>
-                <input type="text" id="Name" name="Name"><br>
-                <label for="Vorname">Vorname</label><br>
-                <input type="Vorname" id="Vorname" name="Vorname">
-            </form>
-            <textarea name="message" rows="10" cols="30">
-            Screben Sie deine Nachricht.
-          </textarea>
-            <button type="button" onclick="alert('LiLook')">Absenden</button>
-            </form>
-            <p>Email: name@email.com</p>
-            <p>Tel: 123456789</p>
-            <a href="https://www.facebook.com/elizaveta.lukinikh/">
-                <img src="smiley.gif" alt="Facebook" style="width:64px;height:64px;">
-            </a>
-            <a href="https://www.instagram.com/lillook/">
-                <img src="smiley.gif" alt="Instagram" style="width:64px;height:64px;">
-            </a>
-            <a href="https://www.behance.net/f824e1c0/">
-                <img src="smiley.gif" alt="Behance" style="width:64px;height:64px;">
-            </a>
-            <a href="www.linkedin.com/in/elizaveta-lukinykh-975230240">
-                <img src="smiley.gif" alt="LinkdIn" style="width:64px;height:64px;">
-            </a>
-        </section>
+    <section id="Kontakt">
+        <h2>Kontakt</h2>
+        <div class="kontakt-grid">
+            <div class="form-spalte">
+                <form action="#" method="post">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="Vorname">Vorname</label><br>
+                    <input type="text" id="Vorname" name="Vorname" required><br><br>
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <textarea name="message" rows="4" cols="30" placeholder="Schreiben Sie Ihre Nachricht"
+                        required></textarea><br><br>
+                    <button type="submit">Absenden</button>
+                </form>
+            </div>
+            <div class="kontakt-spalte">
+                <address>
+                    <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
+                    <p>Tel: 123456789</p>
 
-        <footer>
-            <a href="#footer">2025 Portfolio. Alle Rechte vorbeheben</a>
-        </footer>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/elizaveta.lukinikh/"
+                            aria-label="Besuchen Sie meine Facebook-Seite" target="_blank">
+                            <img src="images/facebooklogo.png" alt="Facebook" width="48" height="48">
+                        </a>
+                        <a href="https://www.instagram.com/lillook/" aria-label="Besuchen Sie meine Instagram-Seite"
+                            target="_blank">
+                            <img src="images/insta%20logo.png" alt="Instagram" width="48" height="48">
+                        </a>
+                        <a href="https://www.behance.net/f824e1c0/" aria-label="Besuchen Sie meine Behance-Seite"
+                            target="_blank">
+                            <img src="images/behance%20logo.png" alt="Behance" width="48" height="48">
+                        </a>
+                        <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240"
+                            aria-label="Besuchen Sie meine LinkdIn" target="_blank">
+                            <img src="images/linkd logo.png" alt="LinkdIn" width="48" height="48">
+                        </a>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </footer>
 </body>
 
 </html>
