@@ -5,24 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiLooK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="LiLook Logo">
-        <nav>
-            <a href="#Willkommen">Willkommen</a>
-            <a href="#Über-mich">Über mich</a>
-            <a href="#Projekte">Projekte</a>
-            <a href="#Kontakt">Kontakt</a>
-        </nav>
-    </header>
-
     <section id="Willkommen">
-        <h1>Willkommen auf meinem Portfolio!</h1>
-        <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
+        <!-- Header -->
+        <div class="navbar">
+            <div class="nav-container">
+                <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                <!-- Checkbox für das Burger-Menü -->
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <!-- Label für das Burger-Menü (SVG-Bild) -->
+                <label for="burger-toggle" class="burger-menu">
+                    <img src="/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/burger1.svg"
+                        alt="Menü" class="burger-icon">
+                </label>
+                <div class="nav-menu">
+                    <a href="#Willkommen" class="nav-link">Willkommen</a>
+                    <a href="#Über-mich" class="nav-link">Über mich</a>
+                    <a href="#Projekte" class="nav-link">Projekte</a>
+                    <a href="#Kontakt" class="nav-link">Kontakt</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+        </div>
+        <!-- Willkommen Section -->
+        <div class="hero">
+            <img src="images/logo.png" alt="LiLook Logo">
+            <h1>Portfolio</h1>
+            <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu
+                kontaktieren.
+            </p>
+            <div class="button-container">
+                <a href="#Über-mich" class="scroll-button">
+                    <img src="/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/arrow left white.png"
+                        alt="Pfeil Icon" class="arrow-icon" id="arrow-icon">
+                </a>
+            </div>
+        </div>
+        <div class="merits">
+            UX DESIGN
+        </div>
     </section>
 
     <section id="Über-mich">
@@ -42,7 +72,7 @@
             </div>
             <div class="right-column">
                 <div class="about-image">
-                    <img src="images/foto.JPG" alt="LiLook Foto">
+                    <img src="LiLook/images/foto.JPG" alt="LiLook Foto">
                 </div>
             </div>
         </div>
@@ -109,19 +139,19 @@
                     <div class="social-links">
                         <a href="https://www.facebook.com/elizaveta.lukinikh/"
                             aria-label="Besuchen Sie meine Facebook-Seite" target="_blank">
-                            <img src="images/facebooklogo.png" alt="Facebook" width="48" height="48">
+                            <img src="LiLook/images/facebooklogo.png" alt="Facebook" width="48" height="48">
                         </a>
                         <a href="https://www.instagram.com/lillook/" aria-label="Besuchen Sie meine Instagram-Seite"
                             target="_blank">
-                            <img src="images/insta%20logo.png" alt="Instagram" width="48" height="48">
+                            <img src="LiLook/images/insta logo.png" alt="Instagram" width="48" height="48">
                         </a>
                         <a href="https://www.behance.net/f824e1c0/" aria-label="Besuchen Sie meine Behance-Seite"
                             target="_blank">
-                            <img src="images/behance%20logo.png" alt="Behance" width="48" height="48">
+                            <img src="LiLook/images/behance logo.png" alt="Behance" width="48" height="48">
                         </a>
                         <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240"
                             aria-label="Besuchen Sie meine LinkdIn" target="_blank">
-                            <img src="images/linkd logo.png" alt="LinkdIn" width="48" height="48">
+                            <img src="LiLook/images/linkd logo.png" alt="LinkdIn" width="48" height="48">
                         </a>
                     </div>
                 </address>
