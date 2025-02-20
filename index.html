@@ -13,19 +13,43 @@
     <link rel="stylesheet" href="CSS/mediaQueries.css">
 </head>
 <body>
-    <header>
-        <img src="LiLook/images/logo.png" alt="LiLook Logo">
-        <nav>
-            <a href="#Willkommen">Willkommen</a>
-            <a href="#Über-mich">Über mich</a>
-            <a href="#Projekte">Projekte</a>
-            <a href="#Kontakt">Kontakt</a>
-        </nav>
-    </header>
-
     <section id="Willkommen">
-        <h1>Willkommen auf meinem Portfolio!</h1>
-        <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
+        <!-- Header -->
+        <div class="navbar">
+            <div class="nav-container">
+                <img src="LiLook/images/logo.png" alt="LiLook Logo">
+                <!-- Checkbox für das Burger-Menü -->
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <!-- Label für das Burger-Menü (SVG-Bild) -->
+                <label for="burger-toggle" class="burger-menu">
+                    <img src="/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/burger1.svg"
+                        alt="Menü" class="burger-icon">
+                </label>
+                <div class="nav-menu">
+                    <a href="#Willkommen" class="nav-link">Willkommen</a>
+                    <a href="#Über-mich" class="nav-link">Über mich</a>
+                    <a href="#Projekte" class="nav-link">Projekte</a>
+                    <a href="#Kontakt" class="nav-link">Kontakt</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+        </div>
+        <!-- Willkommen Section -->
+        <div class="hero">
+            <img src="images/logo.png" alt="LiLook Logo">
+            <h1>Willkommen auf meinem Portfolio!</h1>
+            <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
+            <div class="button-container">
+                <a href="#Über-mich" class="scroll-button">
+                    <img src="/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/arrow left white.png"
+                        alt="Pfeil Icon" class="arrow-icon" id="arrow-icon">
+                </a>
+            </div>
+        </div>
+        <div class="merits">
+            UX DESIGN
+        </div>
     </section>
 
     <section id="Über-mich">
