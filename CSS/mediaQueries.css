@@ -1,0 +1,90 @@
+/* Desktop */
+@media (min-width: 1200px) {
+   
+}
+
+
+/* Tablet */
+@media (min-width: 769px) {
+    /* Typography */
+    h1 {
+        font-size: 64px;
+        line-height: 96px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .navbar {
+        top: 64px;;  
+        width: 80%;
+        padding: 16px 24px;
+    }
+
+    .nav-container {
+        max-width: ;
+        gap: 30px;
+    }
+
+    .nav-menu {
+        gap: 30px;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+     /* Typography */
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    } 
+    .navbar {
+        width: 60%;
+        padding: 16px 40px;
+        position: absolute;
+    }   
+    .burger-menu {
+        display: block; 
+    }
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        margin-top: 16px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(244, 242, 242, 0.9);
+        padding: 16px 0;
+        border-radius: 48px;
+    }
+    /* Wenn die Checkbox aktiviert ist, zeige die Navigationslinks */
+    .burger-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+    .logo {
+        width: 50px;
+        height: 44px;
+    }
+}
+

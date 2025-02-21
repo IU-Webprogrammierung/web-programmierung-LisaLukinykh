@@ -25,31 +25,46 @@
 }
 
 /* Body Styles */
+
 body {
+    font-family: 'Judson', serif;
     color: #000;
     background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1 {
+    font-size: 96px;
+    line-height: 110px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin: 8px 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
 }
 
 img {
     display: block;
-
-    /* Typography */
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
 }
 
 /* Common Styles */
@@ -74,11 +89,13 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2rem;
 }
 
 /* Navigation */
 .navbar {
     position: fixed;
+    top: 38px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -86,19 +103,21 @@ p {
     background: rgba(245, 245, 245, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 48px;
+    padding: 16px 48px;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .logo {
-    display: block;
+    width: 70px;
+    height: 67px;
 }
 
-/* Navigationslinks (Großen Screen) */
+/* Navigationslinks (Desktop) */
 .nav-menu {
     display: flex;
     gap: 52px;
@@ -135,10 +154,10 @@ p {
 
 /* Willkommen Section */
 #Willkommen {
-    background-image: url ("https://raw.githubusercontent.com/IU-Webprogrammierung/web-programmierung-LisaLukinykh/8fbf1b4d4911dd323b6453e2fba906eee9537f91/images/Backround.png");
+    position: relative;
+    background-image: url("/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/Bewertung4.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .hero {
@@ -146,27 +165,42 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0.5rem;
 }
 
 .hero img {
     width: auto;
+    max-height: 156px;
+    margin-bottom: 0, 5rem;
 }
 
-.hero h1 {}
+.hero h1 {
+    font-size: 96px;
+    margin-bottom: 0.5rem;
+}
 
 .hero p {
+    max-width: 614px;
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
     color: #595757;
+    margin-bottom: 2rem;
 }
 
 .button-container {
     margin: 40px auto;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
 }
 
 .scroll-button {
+    width: 80px;
+    height: 80px;
     background: rgba(90, 90, 90, 0.6);
+    border-radius: 61px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,12 +209,18 @@ p {
 }
 
 .arrow-icon {
+    width: 42px;
+    height: 39px;
     display: block;
 }
 
 .merits {
     font-family: 'Judson';
+    font-size: 24px;
+    line-height: 28px;
     position: absolute;
+    right: 62px;
+    bottom: 38px;
     color: #595757;
     text-align: right;
 }
