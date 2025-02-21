@@ -5,118 +5,213 @@
     box-sizing: border-box;
 }
 
+/* Font Classes */
+.judson-regular {
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.judson-bold {
+    font-family: "Judson", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.judson-regular-italic {
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Body Styles */
 body {
     color: #000;
     background-color: #f5f5f5;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
+
+    /* Typography */
 }
+
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin: 10px 0;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.4em;
-    margin: 8px 0;
+    text-align: center;
 }
 
 p {
-    margin: 10px 0;
+    text-align: center;
 }
 
 /* Common Styles */
-.container, .kontakt-spalte {
+.container,
+.kontakt-spalte {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Section Common Styles */
-#Willkommen, #Über-mich, #Projekte, #Kontakt, .project-section {
+#Willkommen,
+#Über-mich,
+#Projekte,
+#Kontakt,
+.project-section {
     height: 100vh;
     width: 100%;
     color: rgb(20, 19, 19);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-/* Header */
-header {
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%;
+    background: rgba(245, 245, 245, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+}
+
+/* Navigationslinks (Großen Screen) */
+.nav-menu {
+    display: flex;
+    gap: 52px;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: 'Judson', serif;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+
+/* Burger-Menü Icon (Label) */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+/* Willkommen Section */
+#Willkommen {
+    background-image: url ("https://raw.githubusercontent.com/IU-Webprogrammierung/web-programmierung-LisaLukinykh/8fbf1b4d4911dd323b6453e2fba906eee9537f91/images/Backround.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-}
-
-header img {
-    width: 70px;
-    height: 67px;
-    position: relative;
-    margin-bottom: 10px; 
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-/* Willkommen Section */
-#Willkommen {
-    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDE5MHx8ZGVzaWdufGVufDB8fHx8MTczODU1MzI5NXww&ixlib=rb-4.0.3&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
-    background-size: cover;
-    background-position: center;
     text-align: center;
+}
+
+.hero img {
+    width: auto;
+}
+
+.hero h1 {}
+
+.hero p {
+    font-family: 'Inter', sans-serif;
+    color: #595757;
+}
+
+.button-container {
+    margin: 40px auto;
     justify-content: center;
     align-items: center;
 }
 
-#Willkommen h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.scroll-button {
+    background: rgba(90, 90, 90, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 2px #000000, 0px 4px 2px #2D3648;
+    text-decoration: none;
 }
 
-#Willkommen p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    line-height: 1.6;
+.arrow-icon {
+    display: block;
 }
+
+.merits {
+    font-family: 'Judson';
+    position: absolute;
+    color: #595757;
+    text-align: right;
+}
+
 /* Über mich Section */
 .two-column-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 2rem; 
-    align-items: start; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
     padding: 2rem;
 }
 
 .left-column {
-    padding-right: 2rem; 
+    padding-right: 2rem;
 }
 
 .about-image img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
 /* Projekte Section */
 
 .projekt-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 2rem 0;   
-    margin: 0 auto; 
+    padding: 2rem 0;
+    margin: 0 auto;
 }
 
 .card {
@@ -159,11 +254,12 @@ nav {
     text-align: center;
     margin-top: auto;
 }
+
 /* Kontakt Section */
 
 .kontakt-grid {
     display: grid;
-    grid-template-columns: 65% 35%; 
+    grid-template-columns: 65% 35%;
     gap: 30px;
     margin-top: 20px;
 }
@@ -191,6 +287,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .social-links {
     display: flex;
     gap: 15px;
@@ -199,7 +296,7 @@ nav {
 
 /* Footer */
 footer {
-    padding: 20px;  
+    padding: 20px;
 }
 
 .footer-content {
@@ -215,8 +312,9 @@ footer {
 
 .footer-content a {
     text-decoration: none;
-    color: #333;  
+    color: #333;
 }
+
 /* Projekt Seiten */
 
 .project-section h1 {
@@ -236,6 +334,7 @@ footer {
     height: auto;
     object-fit: cover;
 }
+
 .project-info {
     margin: 0 auto;
     padding: 40px 20px;
@@ -278,4 +377,5 @@ footer {
 .contact-info p {
     margin: 0;
 }
+
 /* Impressum */
