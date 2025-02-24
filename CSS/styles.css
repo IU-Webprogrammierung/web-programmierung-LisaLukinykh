@@ -92,6 +92,7 @@ img {
     align-items: center;
     text-align: center;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* Navigation */
@@ -234,17 +235,47 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
-    padding: 2rem;
+    justify-content: center margin: 0 auto;
 }
-
+/* Linke Spalte (Text) */
 .left-column {
-    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 128px;
+}
+.left-column h2{
+    text-align: center;
+}
+.left-column p{
+    text-align: center;
+}
+/* Icons-Container */
+.icon-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+/* Rechte Spalte (Foto) */
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .about-image img {
+    max-width: 350px;
+    max-height: 400px;
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 /* Projekte Section */
