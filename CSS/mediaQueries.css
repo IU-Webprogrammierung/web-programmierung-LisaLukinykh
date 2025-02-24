@@ -1,28 +1,30 @@
-
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1199px) {
+
     /* Typography */
     h1 {
         font-size: 64px;
         line-height: 96px;
     }
-    
+
     h2 {
         font-size: 40px;
         line-height: 48px;
     }
-    
+
     h3 {
         font-size: 32px;
         line-height: 37px;
     }
-    
+
     p {
         font-size: 20px;
         line-height: 25px;
     }
+
     .navbar {
         width: 80%;
+        top: 64px;
         padding: 16px 24px;
     }
 
@@ -34,42 +36,45 @@
         gap: 30px;
     }
 
+
 }
 
 /* mobile */
 @media (max-width: 768px) {
-     /* Typography */
-     h1 {
+
+    /* Typography */
+    h1 {
         font-size: 48px;
         line-height: 64px;
     }
-    
+
     h2 {
         font-size: 32px;
         line-height: 40px;
     }
-    
+
     h3 {
         font-size: 24px;
         line-height: 32px;
     }
-    
+
     p {
         font-size: 16px;
         line-height: 20px;
     }
+
     .navbar {
         width: 60%;
         padding: 16px;
         position: absolute;
     }
-  
+
     .burger-menu {
-        display: block; 
+        display: block;
     }
 
     .nav-menu {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: absolute;
         margin-top: 16px;
@@ -82,7 +87,7 @@
     }
 
     /* Wenn die Checkbox aktiviert ist, zeige die Navigationslinks */
-    .burger-toggle:checked ~ .nav-menu {
+    .burger-toggle:checked~.nav-menu {
         display: flex;
     }
 
@@ -90,12 +95,24 @@
         width: 50px;
         height: 44px;
     }
-  /* Welcommen section */
+
+    #Willkommen,
+    #Über-mich,
+    #Projekte,
+    #Kontakt,
+    .project-section {
+        height: auto;
+        min-height: 100vh;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Welcommen section */
     .hero img {
         width: auto;
         max-height: 90px;
-        margin-bottom: 0,5rem;
+        margin-bottom: 0, 5rem;
     }
+
     .hero h1 {
         font-size: 48px;
     }
@@ -107,7 +124,7 @@
     }
 
     .button-container {
-  
+
         width: 50px;
         height: 50px;
 
@@ -131,38 +148,29 @@
         bottom: 24px;
         text-align: center;
     }
+
     /* Uber mich section */
     .two-column-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+
     }
 
     /* Reihenfolge der Elemente ändern */
     .right-column {
-        order: 1;
+        order: 2;
     }
 
     .left-column {
+        order: 1;
         padding-left: 0;
     }
 
     .left-column h2 {
-        order: 2;
         text-align: center;
-
-    }
-
-    .left-column .about-text {
-        order: 3;
     }
 
     .left-column p {
-        order: 4;
         text-align: center;
-    }
-
-    .icon-container {
-        order: 4;
     }
 
     .icon {
@@ -173,9 +181,10 @@
     .about-image img {
         max-width: 300px;
         max-height: 350px;
+        margin: 0 auto;
     }
+
     /* projekt section */
     /* kontakt section */
     /* Footer */
 }
-

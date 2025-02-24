@@ -98,7 +98,7 @@ img {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 64px;
+    top: 38px;
     max-width: 781px;
     left: 50%;
     transform: translateX(-50%);
@@ -113,7 +113,7 @@ img {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .logo {
@@ -175,7 +175,7 @@ img {
 .hero img {
     width: auto;
     max-height: 156px;
-    margin-bottom: 0,5rem;
+    margin-bottom: 0, 5rem;
 }
 
 .hero h1 {
@@ -234,9 +234,10 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: start;
-    justify-content: center margin: 0 auto;
+    justify-content: center;
+    margin: 0 auto;
 }
+
 /* Linke Spalte (Text) */
 .left-column {
     display: flex;
@@ -244,12 +245,33 @@ img {
     gap: 1rem;
     padding-left: 128px;
 }
-.left-column h2{
+
+.left-column h2 {
     text-align: center;
 }
-.left-column p{
+
+.left-column p {
     text-align: center;
 }
+
+/* Rechte Spalte (Foto) */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-image img {
+    max-width: 350px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
 /* Icons-Container */
 .icon-container {
     display: flex;
@@ -262,20 +284,6 @@ img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease;
-}
-/* Rechte Spalte (Foto) */
-.right-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about-image img {
-    max-width: 350px;
-    max-height: 400px;
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    object-fit: cover;
 }
 
 /* Projekte Section */
