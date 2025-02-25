@@ -35,30 +35,30 @@ body {
 
 /* Typography */
 h1 {
-    font-size: 96px;
-    line-height: 110px;
+    font-size: 6rem;
+    line-height: 6.5rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 h2 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
-    margin: 10px 0;
+    margin: 0.6rem 0;
 }
 
 h3 {
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 p {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
     color: #000000;
 }
@@ -73,7 +73,7 @@ img {
 .container,
 .kontakt-spalte {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -83,7 +83,8 @@ img {
 #Projekte,
 #Kontakt,
 .project-section {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     color: rgb(20, 19, 19);
     display: flex;
@@ -98,16 +99,16 @@ img {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 38px;
-    max-width: 781px;
+    top: 2rem;
+    max-width: 60rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     width: 100%;
     background: rgba(245, 245, 245, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 48px;
-    padding: 16px 48px;
+    border-radius: 3.5rem;
+    padding: 1.5rem 3rem;
 }
 
 .nav-container {
@@ -117,23 +118,23 @@ img {
 }
 
 .logo {
-    width: 70px;
-    height: 67px;
+    width: 4.4rem;
+    height: 4.2rem;
 }
 
 /* Navigationslinks (Desktop) */
 .nav-menu {
     display: flex;
-    gap: 52px;
+    gap: 3rem;
     align-items: center;
 }
 
 .nav-link {
     font-family: 'Judson', serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #000;
     text-decoration: none;
-    padding: 12px 0;
+    padding: 0.75rem 0;
 }
 
 .nav-link.active {
@@ -148,8 +149,8 @@ img {
 }
 
 .burger-icon {
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .burger-toggle {
@@ -169,42 +170,41 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .hero img {
     width: auto;
-    max-height: 156px;
+    max-height: 8rem;
     margin-bottom: 0, 5rem;
 }
 
 .hero h1 {
-    font-size: 96px;
-    margin-bottom: 0.5rem;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    max-width: 614px;
+    max-width: 39rem;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     color: #595757;
     margin-bottom: 2rem;
 }
 
 .button-container {
-    margin: 40px auto;
-    width: 80px;
-    height: 80px;
+    width: 7.5rem;
+    height: 7.5rem;
     justify-content: center;
     align-items: center;
 }
 
 .scroll-button {
-    width: 80px;
-    height: 80px;
+    width: 7.5rem;
+    height: 7.5rem;
     background: rgba(90, 90, 90, 0.6);
-    border-radius: 61px;
+    border-radius: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,18 +213,18 @@ img {
 }
 
 .arrow-icon {
-    width: 42px;
-    height: 39px;
+    width: 2.7rem;
+    height: 2.5rem;
     display: block;
 }
 
 .merits {
     font-family: 'Judson';
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     position: absolute;
-    right: 62px;
-    bottom: 38px;
+    right: 4rem;
+    bottom: 2.4rem;
     color: #595757;
     text-align: right;
 }
@@ -243,7 +243,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-left: 128px;
+    padding-left: 8rem;
 }
 
 .left-column h2 {
@@ -264,11 +264,11 @@ img {
 }
 
 .about-image img {
-    max-width: 350px;
-    max-height: 400px;
+    max-width: 22rem;
+    max-height: 25rem;
     width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
@@ -281,8 +281,8 @@ img {
 }
 
 .icon {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     transition: transform 0.3s ease;
 }
 
@@ -310,7 +310,7 @@ img {
 
 .card-image {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     object-fit: cover;
 }
 
