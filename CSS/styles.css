@@ -99,16 +99,16 @@ img {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 2rem;
-    max-width: 60rem;
+    top: 2.5rem;
+    max-width: 58rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    width: 100%;
+    width: 80%;
     background: rgba(245, 245, 245, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3.5rem;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .nav-container {
@@ -213,8 +213,8 @@ img {
 }
 
 .arrow-icon {
-    width: 2.7rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 2.7rem;
     display: block;
 }
 
@@ -288,53 +288,69 @@ img {
 
 /* Projekte Section */
 
-.projekt-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 0 2rem;
+    max-width: 1200px;
     margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projekt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem;
 }
 
 .card {
-    width: 100%;
-    border: 1px solid #e0e0e0;
+    background: #fff;
+    border: 0.1px solid #595757;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 21rem; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-image {
     width: 100%;
-    height: 12.5rem;
+    height: 25.6rem;
     object-fit: cover;
-}
-
-.card-info {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.card-description {
-    margin: 0;
-    color: #666;
+    border-radius: 1.5rem;
 }
 
 .card-link {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #333;
-    color: white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    margin-top: auto;
+    color: #000;
+    font-family: 'Judson', serif;
+    font-size: 1rem;
+    gap: 1.5rem;
+}
+ 
+.arrow-icon {
+    width: 1rem; 
+    height: 1rem;
 }
 
 /* Kontakt Section */

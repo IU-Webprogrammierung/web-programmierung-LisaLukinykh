@@ -113,6 +113,18 @@
     }
 
     /* Projekte Section */
+    .cards-container {
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    .card-image {
+        height: 20rem;
+    }
+
     /* Kontakt Section */
     /* Footer */
 }
@@ -259,8 +271,24 @@
         max-height: 350px;
         margin: 0 auto;
     }
-
+   
     /* projekt section */
+    .cards-container {
+        gap: 0.5rem;
+        padding: 0 0.25rem;
+    }
+
+    .card {
+        width: 100%; /* Karten nehmen die volle Breite ein */
+        max-width: 100%; /* Maximale Breite auf 100% setzen */
+    }
+
+    .card-image {
+        height: 15rem;
+    }
+
+
     /* kontakt section */
     /* Footer */
+    
 }
