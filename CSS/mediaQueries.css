@@ -126,7 +126,24 @@
     }
 
     /* Kontakt Section */
+    .kontakt-grid {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    .kontakt-item a,
+    .kontakt-item p {
+        font-size: 1.25rem;
+    }
     /* Footer */
+    .footer-content {
+        width: 90%; /
+    }
+
+    .footer-content p,
+    .footer-content a {
+        font-size: 0.9rem; 
+    }
 }
 
 /* mobile */
@@ -289,6 +306,51 @@
 
 
     /* kontakt section */
+    .kontakt-grid {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .form-spalte h2 {
+        font-size: 1.75rem;
+    }
+
+    .form-spalte input,
+    .form-spalte textarea {
+        font-size: 0.9rem;
+    }
+
+    .form-spalte button {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+
+    .kontakt-container {
+        padding: 1rem;
+    }
+
+    .kontakt-item a,
+    .kontakt-item p {
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        width: 2rem;
+        height: 2rem;
+    }
     /* Footer */
+    .footer-content {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 1rem;
+    }
+
+    .footer-content a {
+        order: -1; 
+    }
+
+    .footer-content p {
+        order: 1; 
+    }
     
 }
