@@ -130,49 +130,61 @@
     </section>
     <!-- Kontakt Section -->
     <section id="Kontakt">
-        <h2>Kontakt</h2>
         <div class="kontakt-grid">
+            <!-- Formular-Spalte -->
             <div class="form-spalte">
+                <h2>Kontakt</h2>
                 <form action="#" method="post">
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="Vorname">Vorname</label><br>
-                    <input type="text" id="Vorname" name="Vorname" required><br><br>
-                    <label for="email">Email*</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <textarea name="message" rows="4" cols="30" placeholder="Schreiben Sie Ihre Nachricht"
-                        required></textarea><br><br>
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Ihre Name">
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail">
+
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" placeholder="Schreiben Sie Ihre Nachricht"></textarea>
+
                     <button type="submit">Absenden</button>
                 </form>
             </div>
+            <!-- Kontakt-Spalte -->
             <div class="kontakt-spalte">
-                <address>
-                    <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
-                    <p>Tel: 123456789</p>
-
+                <div class="kontakt-container">
+                    <!-- E-Mail -->
+                    <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                    <div class="kontakt-item">
+                        <img src="/images/icon mail.svg" alt="E-Mail Icon" class="kontakt-icon">
+                        <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
+                    </div>
+                    <!-- Telefon -->
+                    <div class="kontakt-item">
+                        <img src="/images/icon phone.svg" alt="Telefon Icon" class="kontakt-icon">
+                        <p>+49 176345662</p>
+                    </div>
+                    <!-- Adresse -->
+                    <div class="kontakt-item">
+                        <img src="/images/icon location.svg" alt="Adresse Icon" class="kontakt-icon">
+                        <p>Deutschland</p>
+                    </div>
+                    <!-- Social-Media-Icons -->
                     <div class="social-links">
-                        <a href="https://www.facebook.com/elizaveta.lukinikh/"
-                            aria-label="Besuchen Sie meine Facebook-Seite" target="_blank">
-                            <img src="images/facebooklogo.png" alt="Facebook" width="48" height="48">
+                        <a href="https://www.facebook.com/elizaveta.lukinikh/" target="_blank">
+                            <img src="images/facebooklogo.png" alt="Facebook" class="social-icon">
                         </a>
-                        <a href="https://www.instagram.com/lillook/" aria-label="Besuchen Sie meine Instagram-Seite"
-                            target="_blank">
-                            <img src="images/insta logo.png" alt="Instagram" width="48" height="48">
+                        <a href="https://www.instagram.com/lillook/" target="_blank">
+                            <img src="images/insta logo.png" alt="Instagram" class="social-icon">
                         </a>
-                        <a href="https://www.behance.net/f824e1c0/" aria-label="Besuchen Sie meine Behance-Seite"
-                            target="_blank">
-                            <img src="images/behance logo.png" alt="Behance" width="48" height="48">
+                        <a href="https://www.linkedin.com/in/elizaveta-lukinykh-975230240" target="_blank">
+                            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
                         </a>
-                        <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240"
-                            aria-label="Besuchen Sie meine LinkdIn" target="_blank">
-                            <img src="images/linkd logo.png" alt="LinkdIn" width="48" height="48">
+                        <a href="https://www.behance.net/f824e1c0/" target="_blank">
+                            <img src="images/behance-icon.svg" alt="Behance" class="social-icon">
                         </a>
                     </div>
-                </address>
+                </div>
             </div>
-        </div>
     </section>
-
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
