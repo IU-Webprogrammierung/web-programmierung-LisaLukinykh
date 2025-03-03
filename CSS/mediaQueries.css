@@ -144,6 +144,23 @@
     .footer-content a {
         font-size: 0.9rem; 
     }
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+        max-width: 90%; 
+        margin-top: 4rem;
+    }
+
+    .kontakt-container {
+        flex-direction: column; 
+        padding: 1rem; 
+    }
+    .arrow-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .social-links {
+        justify-content: flex-start; 
+    }
 }
 
 /* mobile */
@@ -296,8 +313,8 @@
     }
 
     .card {
-        width: 100%; /* Karten nehmen die volle Breite ein */
-        max-width: 100%; /* Maximale Breite auf 100% setzen */
+        width: 100%; 
+        max-width: 100%; 
     }
 
     .card-image {
@@ -351,6 +368,32 @@
 
     .footer-content p {
         order: 1; 
+    }
+    /* Projekts Unterseiten */
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
+        margin-top: 3rem;
+    }
+
+    .kontakt-container {
+        flex-direction: column; 
+        padding: 1rem; 
+    }
+    .project-info {
+        max-width: 20rem;
+    }
+    .arrow-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .kontakt-info {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .social-links {
+        justify-content: flex-start; 
     }
     
 }

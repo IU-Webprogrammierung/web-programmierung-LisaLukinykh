@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiLooK</title>
+    <meta name="description" content="Willkommen im Portfolio von LiLooK – Entdecken Sie spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.">
+    <meta name="keywords" content="LiLooK, Portfolio, UX Design, Webentwicklung, Projekte, Kontakt">
+    <link rel="canonical" href="https://www.LiLooK.de/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,33 +18,35 @@
 </head>
 
 <body>
-    <!-- Willkommen Section -->
-    <section id="Willkommen">
-        <!-- Header -->
+    <header>
         <div class="navbar">
             <div class="nav-container">
-                <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                </a>
                 <!-- Checkbox für das Burger-Menü -->
                 <input type="checkbox" id="burger-toggle" class="burger-toggle">
                 <!-- Label für das Burger-Menü (SVG-Bild) -->
                 <label for="burger-toggle" class="burger-menu">
                     <img src="images/burger.svg" alt="Menü" class="burger-icon">
                 </label>
-                <div class="nav-menu">
+                <nav class="nav-menu" aria-label="Hauptnavigation">
                     <a href="#Willkommen" class="nav-link">Willkommen</a>
                     <a href="#Über-mich" class="nav-link">Über mich</a>
                     <a href="#Projekte" class="nav-link">Projekte</a>
                     <a href="#Kontakt" class="nav-link">Kontakt</a>
-                </div>
+                </nav>
             </div>
         </div>
-        <!-- Hero Section -->
+    </header>
+       <!-- Willkommen Section -->
+    <section id="Willkommen" aria-label="Willkommen">
         <div class="hero">
             <img src="images/logo.png" alt="LiLook Logo">
             <h1>Portfolio</h1>
             <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
             <div class="button-container">
-                <a href="#Über-mich" class="scroll-button">
+                <a href="#Über-mich" class="scroll-button" aria-label="Scrollen zu über mich">
                     <img src="images/arrow left white.png" alt="Pfeil Icon" class="arrow-icon" id="arrow-icon">
                 </a>
             </div>
@@ -49,7 +54,7 @@
         <div class="merits"> UX DESIGN</div>
     </section>
     <!-- Über mich Section -->
-    <section id="Über-mich">
+    <section id="Über-mich" aria aria-label="Über mich">
         <div class="two-column-grid">
             <div class="left-column">
                 <h2>Über mich</h2>
@@ -82,12 +87,12 @@
         </div>
     </section>
     <!-- projekts Section -->
-    <section id="Projekte">
+    <section id="Projekte" aria-label="Projekte">
         <h2>Projekte</h2>
         <div class="cards-container">
             <!-- projekt X Cars -->
             <div class="projekt">
-                <article class="card">
+                <article class="card" aria-label="X Cars Projekt">
                     <div class="card-content">
                         <img src="images/x cars card-image.png" alt="X cars Unternehmensoftware" class="card-image">
                         <a href="xcars.html" class="card-link">
@@ -98,7 +103,7 @@
                 </article>
             </div>
             <!-- projekt Villa Oliva -->
-            <div class="projekt">
+            <div class="projekt" aria-label="Villa Oliva Projekt">
                 <article class="card">
                     <div class="card-content">
                         <img src="images/oliva card-image.png" alt="Villa Oliva Webpräsenz" class="card-image">
@@ -111,7 +116,7 @@
             </div>
             <!-- projekt IP Telekom -->
             <div class="projekt">
-                <article class="card">
+                <article class="card" aria-label="IP Telekom Projekt">
                     <div class="card-content">
                         <img src="images/ip card-image.png" alt="IP Telekom Projekt" class="card-image">
                         <a href="ip.html" class="card-link">
@@ -124,7 +129,7 @@
         </div>
     </section>
     <!-- Kontakt Section -->
-    <section id="Kontakt">
+    <section id="Kontakt" aria-label="Kontakt">
         <div class="kontakt-grid">
             <!-- Formular-Spalte -->
             <div class="form-spalte">
@@ -181,7 +186,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer>
+    <footer aria-label="Footer">
         <div class="footer-content">
             <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
             <a href="impressum.html">Impressum</a>
