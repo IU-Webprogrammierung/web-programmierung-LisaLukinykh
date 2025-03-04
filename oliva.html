@@ -1,86 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>villa oliva</title>
+    <title>X Cars Projekt</title>
+    <meta name="description"
+        content="Entdecken Sie das X Cars Projekt – ein benutzerfreundliches Fuhrparkmanagement-System, das effiziente Datenerfassung und Verwaltung ermöglicht.">
+    <meta name="keywords" content="X Cars, Fuhrparkmanagement, UX Design, Softwareentwicklung, LiLooK">
+    <link rel="canonical" href="https://www.LiLooK.de/xcars.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
 </head>
 
 <body>
     <header>
-        <img src="/Users/lilook/Documents/ui aufgabe/projekt web programmirung /web-programmierung-LisaLukinykh/images/logo.png"
-            alt="LiLook Logo">
-        <nav>
-            <a href="index.html">Willkommen</a>
-            <a href="index.html">Über mich</a>
-            <a href="index.html">Projekte</a>
-            <a href="index.html">Kontakt</a>
-        </nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                </a>
+                <!-- Checkbox für das Burger-Menü -->
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <!-- Label für das Burger-Menü (SVG-Bild) -->
+                <label for="burger-toggle" class="burger-menu">
+                    <img src="images/burger.svg" alt="Menü" class="burger-icon">
+                </label>
+                <nav class="nav-menu">
+                    <a href="index.html#Willkommen" class="nav-link">Willkommen</a>
+                    <a href="index.html#Über-mich" class="nav-link">Über mich</a>
+                    <a href="index.html#Projekte" class="nav-link">Projekte</a>
+                    <a href="index.html#Kontakt" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="project-section">
-            <h1>
-                Webpräsenz Villa Oliva
-            </h1>
+        <section id="Galerie" aria-label="Galerie">
             <div class="project-gallery">
-                <div class="gallery-grid">
-                    <img src="Assets/mockup1.png" alt="Mock-up der Villa Oliva Website - Hauptseite">
-                    <img src="Assets/mockup2.png" alt="Mock-up der Villa Oliva Website - Über uns">
-                    <img src="Assets/mockup3.png" alt="Mock-up der Villa Oliva Website - Galerie">
-                    <img src="Assets/mockup4.png" alt="Mock-up der Villa Oliva Website - Kontakt">
+                <div class="gallery-flex">
+                    <figure>
+                        <img src="images/oliva mockup1.png" alt="Villa Oliva - Hauptseite">
+                    </figure>
+                    <figure>
+                        <img src="images/oliva mockup2.png" alt="Villa Oliva Booking">
+                    </figure>
+                    <figure>
+                        <img src="images/oliva mockup3.png" alt="Villa Oliva Events">
+                    </figure>
+                    <figure>
+                        <img src="images/oliva mockup4.png" alt="Villa Oliva Event Booking">
+                    </figure>
                 </div>
             </div>
         </section>
-        <section class="project-info">
-            <div class="project-description">
-                <p>
-                    lorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-                    impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-                    impressumlorem
-                    impressumlorem impressumlorem impressumlorem impressumlorem impressum
-                </p>
-            </div>
+        <section id="Projekt-info" aria-label="Projekt-info">
+            <article>
+
+                <div class="project-description">
+                    <h2>Villa Oliva</h2>
+                    <h3>Italien Fereinwohnung</h3>
+                    <p>Villa Oliva ist ein charmantes Ferienhaus in Italien, das Gästen einen erholsamen und
+                        unvergesslichen Aufenthalt bietet. Im Rahmen dieses Projekts wurde eine moderne und
+                        benutzerfreundliche Webpräsenz entwickelt, die Buchungsmöglichkeiten klar und intuitiv darstellt
+                        und die vielfältigen Services der Unterkunft ansprechend präsentiert.
+                    </p>
+                    <p>
+                        Die Projektarbeit umfasste die Konzeption und Gestaltung der Webseite, mit Fokus auf eine klare
+                        Struktur und ansprechende Visuals. Ein responsives Layout sorgt dafür, dass sich die Seite
+                        nahtlos an verschiedene Bildschirmgrößen anpasst. Ein harmonisches Farbschema, inspiriert von
+                        der Atmosphäre Italiens, vermittelt ein Gefühl von Entspannung und Reiselust.
+                    </p>
+                </div>
+            </article>
             <div class="project-actions">
                 <div class="project-navigation">
-                    <a href="xcars.html" class="nav-button previous">&larr; Vorheriges Projekt</a>
-                    <a href="oliva.html" class="nav-button next">Nächstes Projekt &rarr;</a>
+                    <a href="xcars.html" class="nav-button previous" aria-label="Projektnavigation"> Vorheriges Projekt
+                        <img src="images/arrow left.png" alt="Pfeil Icon" class="arrow-icon">
+                    </a>
+                    <a href="ip.html" class="nav-button next" aria-label="Projektnavigation">Nächstes Projekt
+                        <img src="images/arrow right.png.png.png" alt="Pfeil Icon" class="arrow-icon">
+                    </a>
                 </div>
             </div>
-            <div class="kontakt-spalte">
-                <div class="kontakt-container">
+            <div class="contact-container" aria-label="Kontaktinformationen">
+                <div class="kontakt-info">
+                    <div class="kontakt-item">
+                        <img src="images/icon mail.svg" alt="E-Mail Icon">
+                        <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
+                    </div>
+                    <div class="kontakt-item">
+                        <img src="images/icon phone.svg" alt="Phone Icon">
+                        <p>+49 176345662</p>
+                    </div>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/elizaveta.lukinikh/" target="_blank">
-                            <img src="images/facebooklogo.png" alt="Facebook" width="48" height="48">
+                        <a href="https://www.facebook.com/elizaveta.lukinikh/" target="_blank" aria-label="Facebook">
+                            <img src="images/facebooklogo.png" alt="Facebook">
                         </a>
-                        <a href="https://www.instagram.com/lillook/" target="_blank">
-                            <img src="images/insta logo.png" alt="Instagram" width="48" height="48">
+                        <a href="https://www.instagram.com/lillook/" target="_blank" aria-label="Instagram">
+                            <img src="images/insta logo.png" alt="Instagram">
                         </a>
-                        <a href="https://www.behance.net/f824e1c0/" target="_blank">
-                            <img src="images/behance logo.png" alt="Behance" width="48" height="48">
+                        <a href="https://www.behance.net/f824e1c0/" target="_blank" aria-label="Behance">
+                            <img src="images/behance logo.png" alt="Behance">
                         </a>
-                        <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240" target="_blank">
-                            <img src="images/linkd logo.png" alt="LinkdIn" width="48" height="48">
+                        <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240" target="_blank"
+                            aria-label="LinkdIn">
+                            <img src="images/linkd logo.png" alt="LinkdIn">
                         </a>
                     </div>
-
-                    <address class="contact-info">
-                        <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
-                        <p>Tel: 123456789</p>
-                    </address>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Footer">
         <div class="footer-content">
             <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
             <a href="impressum.html">Impressum</a>
         </div>
     </footer>
-
 </body>
 
 </html>
