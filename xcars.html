@@ -1,75 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X Cars Projekt</title>
+    <meta name="description"
+        content="Entdecken Sie das X Cars Projekt – ein benutzerfreundliches Fuhrparkmanagement-System, das effiziente Datenerfassung und Verwaltung ermöglicht.">
+    <meta name="keywords" content="X Cars, Fuhrparkmanagement, UX Design, Softwareentwicklung, LiLooK">
+    <link rel="canonical" href="https://www.LiLooK.de/xcars.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
 </head>
-<main>
-    <section class="project-section">
-        <h1>Unternehmen Software X CARS</h1>
-        <div class="project-gallery">
-            <div class="gallery-grid">
-                <img src="Assets/mockup1.png" alt="Mock-up der X cars Website - Hauptseite">
-                <img src="Assets/mockup2.png" alt="Mock-up der X cars Website - Über uns">
-                <img src="Assets/mockup3.png" alt="Mock-up der X cars Website - Galerie">
-                <img src="Assets/mockup4.png" alt="Mock-up der Xcars Website - Kontakt">
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="LiLook Logo" class="logo">
+                </a>
+                <!-- Checkbox für das Burger-Menü -->
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <!-- Label für das Burger-Menü (SVG-Bild) -->
+                <label for="burger-toggle" class="burger-menu">
+                    <img src="images/burger.svg" alt="Menü" class="burger-icon">
+                </label>
+                <nav class="nav-menu">
+                    <a href="index.html#Willkommen" class="nav-link">Willkommen</a>
+                    <a href="index.html#Über-mich" class="nav-link">Über mich</a>
+                    <a href="index.html#Projekte" class="nav-link">Projekte</a>
+                    <a href="index.html#Kontakt" class="nav-link">Kontakt</a>
+                </nav>
             </div>
         </div>
-    </section>
-    <section class="project-info">
-        <p>lorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-            impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-            impressumlorem
-            impressumlorem impressumlorem impressumlorem
-        </p>
-        <div class="project-description">
-            <p>
-                lorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-                impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem impressumlorem
-                impressumlorem
-                impressumlorem impressumlorem impressumlorem impressumlorem impressum
-            </p>
-        </div>
-        <div class="project-actions">
-            <div class="project-navigation">
-                <a href="oliva.html" class="nav-button next">Nächstes Projekt &rarr;</a>
+    </header>
+    <main>
+        <section id="Galerie" aria-label="Galerie">
+            <div class="project-gallery">
+                <div class="gallery-flex">
+                    <figure>
+                        <img src="images/xcars mockup 1.png" alt="Mock-up der X cars Website - Hauptseite">
+                    </figure>
+                    <figure>
+                        <img src="images/xcars mockup 2.png" alt="Mock-up der X cars Website - Fahrzeug Ubersicht">
+                    </figure>
+                    <figure>
+                        <img src="images/xcars mockup 3.png" alt="Mock-up der X cars Website - Verwaltung Daschboard">
+                    </figure>
+                    <figure>
+                        <img src="images/xcars mockup 4.png" alt="Mock-up der Xcars Website - Auto Verwaltung">
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="kontakt-spalte">
-            <div class="kontakt-container">
-                <div class="social-links">
-                    <a href="https://www.facebook.com/elizaveta.lukinikh/" target="_blank">
-                        <img src="images/facebooklogo.png" alt="Facebook" width="48" height="48">
-                    </a>
-                    <a href="https://www.instagram.com/lillook/" target="_blank">
-                        <img src="images/insta logo.png" alt="Instagram" width="48" height="48">
-                    </a>
-                    <a href="https://www.behance.net/f824e1c0/" target="_blank">
-                        <img src="images/behance logo.png" alt="Behance" width="48" height="48">
-                    </a>
-                    <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240" target="_blank">
-                        <img src="images/linkd logo.png" alt="LinkdIn" width="48" height="48">
+        </section>
+        <section id="Projekt-info" aria-label="Projekt-info">
+            <article>
+
+                <div class="project-description">
+                    <h2>X CARS</h2>
+                    <h3>Unternehmen Software</h3>
+                    <p>In diesem Projekt habe ich ein benutzerfreundliches und flexibles Fuhrparkmanagement-System
+                        gestaltet,
+                        das sowohl die Anforderungen des Managements als auch die Bedürfnisse von Testfahrern erfüllt.
+                        Die
+                        Entwicklung konzentrierte sich auf eine modulare Systemstruktur und eine intuitive
+                        Benutzeroberfläche,
+                        die eine effiziente Datenerfassung sowie Verwaltung ermöglicht.
+                    </p>
+                    <p>
+                        Funktionen wie Fahrzeugverwaltung, Protokollierung und Dokumentation wurden für das Management
+                        integriert, während Testfahrer von einfachen Reservierungen und Berichterstellungen profitieren.
+                        Mit
+                        Design-Thinking-Methoden und iterativen Prozessen entstand ein zukunftssicheres System, das
+                        komplexe
+                        Herausforderungen elegant löst und ein optimiertes Nutzererlebnis bietet.
+                    </p>
+                </div>
+            </article>
+            <div class="project-actions">
+                <div class="project-navigation">
+                    <a href="oliva.html" class="nav-button next" aria-label="Projektnavigation">Nächstes Projekt
+                        <img src="images/arrow right.png" alt="Pfeil Icon" class="arrow-icon">
                     </a>
                 </div>
-
-                <address class="contact-info">
-                    <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
-                    <p>Tel: 123456789</p>
-                </address>
             </div>
+            <div class="contact-container" aria-label="Kontaktinformationen">
+                <div class="kontakt-info">
+                    <div class="kontakt-item">
+                        <img src="images/icon mail.svg" alt="E-Mail Icon">
+                        <a href="mailto:elukinikh@gmail.com">elukinikh@gmail.com</a>
+                    </div>
+                    <div class="kontakt-item">
+                        <img src="images/icon phone.svg" alt="Phone Icon">
+                        <p>+49 176345662</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/elizaveta.lukinikh/" target="_blank" aria-label="Facebook">
+                            <img src="images/facebooklogo.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/lillook/" target="_blank" aria-label="Instagram">
+                            <img src="images/insta logo.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.behance.net/f824e1c0/" target="_blank" aria-label="Behance">
+                            <img src="images/behance logo.png" alt="Behance">
+                        </a>
+                        <a href="http://www.linkedin.com/in/elizaveta-lukinykh-975230240" target="_blank"
+                            aria-label="LinkdIn">
+                            <img src="images/linkd logo.png" alt="LinkdIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer aria-label="Footer">
+        <div class="footer-content">
+            <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
+            <a href="impressum.html">Impressum</a>
         </div>
-    </section>
-</main>
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
-        <a href="impressum.html">Impressum</a>
-    </div>
-</footer>
+    </footer>
 </body>
-
 </html>
