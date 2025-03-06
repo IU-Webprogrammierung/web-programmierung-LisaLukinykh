@@ -6,203 +6,467 @@
 }
 
 body {
+    font-family: 'Judson', serif;
     color: #000;
     background-color: #f5f5f5;
+    line-height: 1.6;
 }
+
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
 }
+
+/* Typography */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin: 10px 0;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin: 0.6rem 0;
 }
 
 h3 {
-    font-size: 1.4em;
-    margin: 8px 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
 p {
-    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #000000;
 }
 
 /* Common Styles */
-.container, .kontakt-spalte {
+.container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
 /* Section Common Styles */
-#Willkommen, #Über-mich, #Projekte, #Kontakt, .project-section {
-    height: 100vh;
+#Willkommen,
+#Über-mich,
+#Projekte,
+#Kontakt,
+#Galerie,
+#Projekt-info {
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     color: rgb(20, 19, 19);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
-/* Header */
-header {
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 2.5rem;
+    max-width: 58rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 80%;
+    background: rgba(245, 245, 245, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3.5rem;
+    padding: 1rem 3rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 4.4rem;
+    height: 4.2rem;
+}
+
+/* Navigationslinks (Desktop) */
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: 'Judson', serif;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    padding: 0.75rem 0;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+
+/* Burger-Menü Icon (Label) */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+/* Willkommen Section */
+#Willkommen {
+    position: relative;
+    background-image: url("https://raw.github.com/IU-Webprogrammierung/web-programmierung-LisaLukinykh/3fcdb39366fddfc1ce6736a8dbe80ecb655bb63a/images/Backround.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-}
-
-header img {
-    width: 70px;
-    height: 67px;
-    position: relative;
-    margin-bottom: 10px; 
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-/* Willkommen Section */
-#Willkommen {
-    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDE5MHx8ZGVzaWdufGVufDB8fHx8MTczODU1MzI5NXww&ixlib=rb-4.0.3&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450");
-    background-size: cover;
-    background-position: center;
     text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: auto;
+    max-height: 8rem;
+    margin-bottom: 0, 5rem;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 39rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #595757;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    width: 7.5rem;
+    height: 7.5rem;
     justify-content: center;
     align-items: center;
 }
 
-#Willkommen h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.scroll-button {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: rgba(90, 90, 90, 0.6);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 2px #000000, 0px 4px 2px #2D3648;
+    text-decoration: none;
 }
 
-#Willkommen p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    line-height: 1.6;
+.arrow-icon {
+    width: 3rem;
+    height: 2.7rem;
 }
+
+.merits {
+    font-family: 'Judson';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    position: absolute;
+    right: 4rem;
+    bottom: 2.4rem;
+    color: #595757;
+    text-align: right;
+}
+
 /* Über mich Section */
 .two-column-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 2rem; 
-    align-items: start; 
-    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+/* Linke Spalte (Text) */
 .left-column {
-    padding-right: 2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 8rem;
+}
+
+/* Rechte Spalte (Foto) */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about-image img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+    max-width: 22rem;
+    max-height: 25rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
 }
+
+/* Icons-Container */
+.icon-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
 /* Projekte Section */
 
-.projekt-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem 0;   
-    margin: 0 auto; 
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projekt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem;
 }
 
 .card {
-    width: 100%;
-    border: 1px solid #e0e0e0;
+    background: #fff;
+    border: 0.1px solid #595757;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 21rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-image {
     width: 100%;
-    height: 200px;
+    height: 25.6rem;
     object-fit: cover;
-}
-
-.card-info {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.card-description {
-    margin: 0;
-    color: #666;
+    border-radius: 1.5rem;
 }
 
 .card-link {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #333;
-    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    margin-top: auto;
+    color: #000;
+    font-family: 'Judson', serif;
+    font-size: 1rem;
+    gap: 1.5rem;
 }
+
+.arrow-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
 /* Kontakt Section */
 
+#Kontakt {
+    margin-bottom: 0;
+}
 .kontakt-grid {
     display: grid;
-    grid-template-columns: 65% 35%; 
-    gap: 30px;
-    margin-top: 20px;
+    grid-template-columns: 60% 40%;
+    gap: 3rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .form-spalte form {
     width: 100%;
 }
 
+.form-spalte h2 {
+    margin-bottom: 2rem;
+}
+
 .form-spalte input,
 .form-spalte textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 0.5rem;
+    border: 1px solid #595757;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+.form-spalte input::placeholder,
+.form-spalte textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.form-spalte input {
+    height: 3rem;
+}
+
+.form-spalte textarea {
+    height: 12rem;
+    resize: vertical
 }
 
 .form-spalte button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    background: #5A5A5A;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: 'Judson', sans-serif;
+    font-size: 1.7rem;
+    color: #FFFFFF;
 }
 
 .kontakt-spalte {
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
 }
+
+.kontakt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(159, 158, 158, 0.6);
+    box-shadow: 1px 1px 1px #3c3b3b, 0px 4px 2px #2D3648;
+    border-radius: 4rem;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 1.5rem;
+}
+
+.kontakt-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* Icons in Kontakt-Elementen */
+.kontakt-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Text in Kontakt-Elementen */
+.kontakt-item a,
+.kontakt-item p {
+    font-family: 'Judson', serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #000000;
+    margin: 0;
+}
+
+.kontakt-item a {
+    font-family: "Judson", serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
 .social-links {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /* Footer */
 footer {
-    padding: 20px;  
+    padding: 1.5rem;
+    width: 100%;
+    background: rgba(90, 90, 90, 0.6);
 }
 
 .footer-content {
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -210,72 +474,139 @@ footer {
 }
 
 .footer-content p {
+    font-family: "Judson", serif;
+    font-size: 0.8rem;
+    color: #FFFFFF;
     margin: 0;
 }
 
 .footer-content a {
-    text-decoration: none;
-    color: #333;  
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #595757;
+    text-decoration: underline;
 }
+
 /* Projekt Seiten */
 
-.project-section h1 {
-    text-align: center;
-    margin-bottom: 40px;
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    max-width: 54rem;
+
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 40px;
+#Projekt-info {   
+    margin-bottom: 0;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.project-info {
-    margin: 0 auto;
-    padding: 40px 20px;
+.gallery-flex figure {
+    flex: 1 1 calc(50% - 0.5rem);
+    margin: 0;
 }
 
 .project-description {
-    margin-bottom: 30px;
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    padding: 0 4rem;
+}
+.project-description h2 {
+    margin: 0; 
+}
+.project-description h3 {
+    margin: 0; 
+}
+.project-description p {
+    margin: 1rem;; 
 }
 
 .project-actions {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+    justify-content: flex-end;
+    padding: 0 4rem;
+    width: 100%;
 }
-
+.project-navigation {
+    display: flex; 
+    align-items: center; 
+    gap: 2rem; 
+}
 .nav-button {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: none
 }
 
-.kontakt-container {
-    display: flex;
+.arrow-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contact-container {
+    flex-direction: row;
     justify-content: space-between;
+    background: #f5f5f5;
+    position: relative;
+    box-shadow: none;
+    padding: 1rem 4rem;
+
+}
+
+.kontakt-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.kontakt-item {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.contact-info {
-    text-align: right;
+.kontakt-item img {
+    width: 2rem;
+    height: 2rem;
 }
 
-.contact-info a {
-    display: block;
-    color: #333;
+.kontakt-item a,
+.kontakt-item p {
+    font-family: 'Judson', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #2D3648;
     text-decoration: none;
-    margin-bottom: 10px;
 }
 
-.contact-info p {
-    margin: 0;
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 100%;
+
 }
+
+.social-links img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
 /* Impressum */
