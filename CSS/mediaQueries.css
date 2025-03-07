@@ -240,7 +240,9 @@
     #Projekte,
     #Kontakt,
     #Galerie,
-    #Projekt-info {
+    #Projekt-info,
+    #impressum-1,
+    #disclaimer {
         margin-bottom: 2rem;
         height: auto;
     }
@@ -383,7 +385,7 @@
 
     .social-icon {
         width: 0.8rem;
-        height: 0,8rem;
+        height: 0, 8rem;
     }
 
     /* Footer */
@@ -420,11 +422,13 @@
         padding: 0;
         width: 100%;
     }
+
     .project-navigation {
         flex-direction: column;
         gap: 0.5rem;
-        
+
     }
+
     .nav-button {
         font-size: 1rem;
         gap: 1rem;
@@ -454,6 +458,20 @@
 
     .social-links {
         justify-content: center;
+    }
+
+    /* Impressum */
+    #impressum-1,
+    #disclaimer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 6rem;
+        margin: 0;
+    }
+
+    #disclaimer {
+        padding-top: 0;
+        margin-bottom: 0;
     }
 
 }
