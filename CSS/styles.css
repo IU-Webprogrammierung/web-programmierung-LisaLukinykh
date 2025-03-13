@@ -143,7 +143,7 @@ p {
 /* Willkommen Section */
 #Willkommen {
     position: relative;
-    background-image: url("https://raw.github.com/IU-Webprogrammierung/web-programmierung-LisaLukinykh/3fcdb39366fddfc1ce6736a8dbe80ecb655bb63a/images/Backround.png");
+    background-image: url("../images/Backround.png");
     background-size: cover;
     background-position: center;
 }
