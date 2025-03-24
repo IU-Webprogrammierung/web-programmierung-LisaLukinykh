@@ -450,7 +450,6 @@ h2 {
     color: #000;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
-    /* Entfernt den blauen Rand beim Fokus */
 }
 
 .form-spalte input:invalid,

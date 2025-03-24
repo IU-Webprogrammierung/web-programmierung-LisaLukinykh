@@ -378,6 +378,10 @@
     .card-link {
         font-size: 0.75rem;
     }
+    .arrow-icon {
+        width: 1rem;
+        height: 1rem;
+    }
 
     /* kontakt section */
     .kontakt-grid {
