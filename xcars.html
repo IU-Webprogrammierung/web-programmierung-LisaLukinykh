@@ -25,20 +25,29 @@
     <main>
         <section id="Galerie" aria-label="Galerie">
             <div class="project-gallery">
-                <div class="gallery-flex">
-                    <figure>
-                        <img src="images/xcars mockup 1.png" alt="Mock-up der X cars Website - Hauptseite">
-                    </figure>
-                    <figure>
-                        <img src="images/xcars mockup 2.png" alt="Mock-up der X cars Website - Fahrzeug Ubersicht">
-                    </figure>
-                    <figure>
-                        <img src="images/xcars mockup 3.png" alt="Mock-up der X cars Website - Verwaltung Daschboard">
-                    </figure>
-                    <figure>
-                        <img src="images/xcars mockup 4.png" alt="Mock-up der Xcars Website - Auto Verwaltung">
-                    </figure>
+                <div class="gallery-slider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="images/xcars mockup 1.png" alt="Mock-up der X cars Website - Hauptseite">
+                        </div>
+                        <div class="slide">
+                            <img src="images/xcars mockup 2.png" alt="Mock-up der X cars Website - Fahrzeugübersicht">
+                        </div>
+                        <div class="slide">
+                            <img src="images/xcars mockup 3.png" alt="Mock-up der X cars Website - Fahrzeugübersicht">
+                        </div>
+                        <div class="slide">
+                            <img src="images/xcars mockup 4.png" alt="Mock-up der X cars Website - Fahrzeugübersicht">
+                        </div>
+                    </div>
                 </div>
+                <!-- Navigationsbuttons -->
+                <button class="nav-button prev-button">
+                    <img src="images/arrow left.png" alt="Vorheriges Projekt" class="nav-icon">
+                </button>
+                <button class="nav-button next-button">
+                    <img src="images/arrow right.png" alt="Nächstes Projekt" class="nav-icon">
+                </button>
             </div>
         </section>
         <section id="Projekt-info" aria-label="Projekt-info">
@@ -66,7 +75,8 @@
             </article>
             <div class="project-actions">
                 <div class="project-navigation">
-                    <a href="oliva.html" class="nav-button next" aria-label="Projektnavigation">Zur Villa Oliva
+                    <a href="oliva.html">Zur Villa Oliva</a>
+                    <a href="oliva.html" class="next-project-btn" aria-label="Projektnavigation">
                         <img src="images/arrow right.png" alt="Pfeil nach rechts für Projektnavigation"
                             class="arrow-icon">
                     </a>
@@ -106,6 +116,7 @@
     </main>
     <!-- Footer wird automatisch eingefügt -->
     <script src="js/headerFooterLogic.js"></script>
+    <script src="js/projectGallery.js"></script>
 </body>
 
 </html>

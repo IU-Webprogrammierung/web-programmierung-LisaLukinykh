@@ -317,12 +317,8 @@ h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 8vw;
-    height: 8vw;
-    max-width: 5rem;
-    /* Maximale Größe festlegen */
-    max-height: 5rem;
-    /* Maximale Größe festlegen */
+    width: 4rem;
+    height: 4rem;
     background: rgba(90, 90, 90, 0.8);
     border: none;
     border-radius: 50%;
@@ -330,30 +326,30 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
 .nav-button:hover {
     background: rgba(24, 24, 24, 0.9);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%) scale(1.05);
 }
 
 /* Positionierung der Buttons */
 .prev-button {
-    left: 0;
+    left: 2rem;
 }
 
 .next-button {
-    right: 0;
+    right: 2rem;
 }
 
 /* Pfeil-Icons in den Buttons */
 .nav-icon {
-    width: 4vw;
-    height: 4vw;
-    max-width: 2.5rem;
-    max-height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
@@ -634,25 +630,42 @@ footer {
 }
 
 /* Projekt Seiten */
+#Galerie {
+    min-height: calc(100vh - 8rem);
+    padding: 7rem 2rem 2rem;
+}
 
-.gallery-flex {
+.gallery-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-track {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-    max-width: 54rem;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
 
+.slide {
+    flex: 0 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 80vh;
+    object-fit: contain;
 }
 
 #Projekt-info {
     margin-bottom: 0;
-}
-
-.gallery-flex figure {
-    flex: 1 1 calc(50% - 0.5rem);
-    margin: 0;
 }
 
 .project-description {
@@ -683,12 +696,49 @@ footer {
     justify-content: flex-end;
     padding: 0 4rem;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-navigation {
     display: flex;
     align-items: center;
-    gap: 2rem;
+}
+
+.project-navigation a {
+    font-family: 'Judson', serif;
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Button mit Pfeil */
+.next-project-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #f5f5f5;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Pfeil-Icon */
+.next-project-btn img {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.next-project-btn:hover {
+    transform: translateX(5px);
+}
+
+.next-project-btn:hover img {
+    transform: scale(1.2);
 }
 
 .contact-container {
