@@ -17,30 +17,12 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/loadTemplates.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-container">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="LiLook Logo" class="logo">
-                </a>
-                <!-- Checkbox für das Burger-Menü -->
-                <input type="checkbox" id="burger-toggle" class="burger-toggle">
-                <!-- Label für das Burger-Menü (SVG-Bild) -->
-                <label for="burger-toggle" class="burger-menu">
-                    <img src="images/burger.svg" alt="Menü" class="burger-icon">
-                </label>
-                <nav class="nav-menu" aria-label="Hauptnavigation">
-                    <a href="#Willkommen" class="nav-link">Willkommen</a>
-                    <a href="#Über-mich" class="nav-link">Über mich</a>
-                    <a href="#Projekte" class="nav-link">Projekte</a>
-                    <a href="#Kontakt" class="nav-link">Kontakt</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <!-- Der Header wird hier automatisch eingefügt -->
+
     <!-- Willkommen Section -->
     <section id="Willkommen" aria-label="Willkommen">
         <div class="hero">
@@ -201,137 +183,11 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer aria-label="Footer">
-        <div class="footer-content">
-            <p>&copy; 2025 LiLooK. Alle Rechte vorbehalten.</p>
-            <a href="impressum.html">Impressum</a>
-        </div>
-    </footer>
-    <!-- Java Script -->
-    <script>
-        $(document).ready(function () {
-            // Funktion, um den aktiven Link zu unterstreichen
-            function highlightActiveLink() {
-                $('.nav-link').removeClass('active');
+    <!-- Der Footer wird hier automatisch eingefügt -->
+    <!-- JavaScript für die Logik -->
+    <script src="js/headerFooterLogic.js"></script>
+    <script src="js/galleryLogic.js"></script>
 
-                // Durchlaufe alle Sections
-                $('section').each(function () {
-                    const sectionTop = $(this).offset().top;
-                    const sectionBottom = sectionTop + $(this).outerHeight();
-                    const scrollPosition = $(window).scrollTop() + $(window).height() / 2;
-
-                    // Wenn die Scroll-Position innerhalb des Abschnitts liegt
-                    if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
-                        $('.nav-link[href="#' + $(this).attr('id') + '"]').addClass('active');
-                    }
-                });
-            }
-
-            // Beim Scrollen die aktive Markierung aktualisieren
-            $(window).scroll(function () {
-                highlightActiveLink();
-            });
-
-            // Beim Laden der Seite die aktive Markierung setzen
-            highlightActiveLink();
-
-            // Hover-Effekt für die Links
-            $('.nav-link').hover(
-                function () {
-                    // Text vergrößern und fett machen
-                    $(this).css({
-                        'font-size': '1.75rem',
-                        'font-weight': '700'
-                    });
-                },
-                function () {
-                    // Zurück zum ursprünglichen Stil
-                    $(this).css({
-                        'font-size': '1.5rem',
-                        'font-weight': '400'
-                    });
-                }
-            );
-
-            // Burger-Menü: Automatisch öffnen/schließen bei Hover
-            if ($(window).width() <= 767) {
-                $('.burger-menu').hover(
-                    function () {
-                        $('#burger-toggle').prop('checked', true);
-                    },
-                    function () {
-                        $('#burger-toggle').prop('checked', false);
-                    }
-                );
-
-                // Menü schließen, wenn der Nutzer die Maus aus dem Menü bewegt
-                $('.nav-menu').mouseleave(function () {
-                    $('#burger-toggle').prop('checked', false);
-                });
-            }
-
-            // Galerie-Funktionalität
-            const $cardsContainer = $('.cards-container');
-            const $projects = $('.projekt');
-            const cardWidth = $projects.outerWidth(true);
-            let currentIndex = 0;
-
-            // Funktion, um die Galerie zu verschieben
-            function moveGallery(direction) {
-                if (direction === 'next' && currentIndex < $projects.length - 1) {
-                    currentIndex++;
-                } else if (direction === 'prev' && currentIndex > 0) {
-                    currentIndex--;
-                }
-
-                const offset = -currentIndex * cardWidth;
-                $cardsContainer.css('transform', `translateX(${offset}px)`);
-            }
-
-            // Event-Listener für die Navigation
-            $('.next-button').click(function () {
-                moveGallery('next');
-            });
-
-            $('.prev-button').click(function () {
-                moveGallery('prev');
-            });
-
-            // Touch-Events für Swiping
-            let startX = 0;
-            let isSwiping = false;
-
-            $cardsContainer.on('touchstart', function (e) {
-                startX = e.originalEvent.touches[0].clientX;
-                isSwiping = true;
-            });
-
-            $cardsContainer.on('touchmove', function (e) {
-                if (!isSwiping) return;
-                const currentX = e.originalEvent.touches[0].clientX;
-                const diffX = startX - currentX;
-
-                // Verschieben die Galerie 
-                $cardsContainer.css('transform', `translateX(${-currentIndex * cardWidth - diffX}px)`);
-            });
-
-            $cardsContainer.on('touchend', function (e) {
-                if (!isSwiping) return;
-                isSwiping = false;
-                const endX = e.originalEvent.changedTouches[0].clientX;
-                const diffX = startX - endX;
-
-                // die Richtung des Swipes
-                if (diffX > 50) {
-                    moveGallery('next');
-                } else if (diffX < -50) {
-                    moveGallery('prev');
-                } else {
-                    $cardsContainer.css('transform', `translateX(${-currentIndex * cardWidth}px)`);
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
