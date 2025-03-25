@@ -696,23 +696,29 @@ footer {
     padding: 0 4rem;
     width: 100%;
     max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .project-navigation {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    gap: 2rem;
 }
 
 .project-navigation a {
+    
+    text-decoration: none;
     font-family: 'Judson', serif;
     font-size: 1.25rem;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 /* Button mit Pfeil */
+.prev-project-btn,
 .next-project-btn {
     width: 3.5rem;
     height: 3.5rem;
@@ -726,17 +732,20 @@ footer {
 }
 
 /* Pfeil-Icon */
-.next-project-btn img {
+.prev-project-btn .arrow-icon,
+.next-project-btn .arrow-icon {
     width: 2rem;
     height: 2rem;
     transition: transform 0.3s ease;
 }
 
-.next-project-btn:hover {
+.next-project-btn:hover,
+.prev-project-btn:hover {
     transform: translateX(5px);
 }
 
-.next-project-btn:hover img {
+.next-project-btn:hover .arrow-icon,
+.prev-project-btn:hover .arrow-icon {
     transform: scale(1.2);
 }
 

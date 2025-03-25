@@ -20,24 +20,33 @@
 </head>
 
 <body>
-   <!-- Header wird automatisch eingefügt -->
+    <!-- Header wird automatisch eingefügt -->
     <main>
         <section id="Galerie" aria-label="Galerie">
             <div class="project-gallery">
-                <div class="gallery-flex">
-                    <figure>
-                        <img src="images/oliva mockup1.png" alt="Villa Oliva - Hauptseite">
-                    </figure>
-                    <figure>
-                        <img src="images/oliva mockup2.png" alt="Villa Oliva Booking">
-                    </figure>
-                    <figure>
-                        <img src="images/oliva mockup3.png" alt="Villa Oliva Events">
-                    </figure>
-                    <figure>
-                        <img src="images/oliva mockup4.png" alt="Villa Oliva Event Booking">
-                    </figure>
+                <div class="gallery-slider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="images/oliva mockup1.png" alt="Mock-up der Villa Oliva Website - Hauptseite">
+                        </div>
+                        <div class="slide">
+                            <img src="images/oliva mockup2.png" alt="Mock-up der Villa Oliva Website - Wohnungübersicht">
+                        </div>
+                        <div class="slide">
+                            <img src="images/oliva mockup3.png" alt="Mock-up der Villa Oliva Website - Eventübersicht">
+                        </div>
+                        <div class="slide">
+                            <img src="images/oliva mockup4.png" alt="Mock-up der Villa Oliva Website - Eventenbeschreibung">
+                        </div>
+                    </div>
                 </div>
+                <!-- Navigationsbuttons -->
+                <button class="nav-button prev-button">
+                    <img src="images/arrow left.png" alt="Vorheriges Projekt" class="nav-icon">
+                </button>
+                <button class="nav-button next-button">
+                    <img src="images/arrow right.png" alt="Nächstes Projekt" class="nav-icon">
+                </button>
             </div>
         </section>
         <section id="Projekt-info" aria-label="Projekt-info">
@@ -60,11 +69,14 @@
             </article>
             <div class="project-actions">
                 <div class="project-navigation">
-                    <a href="xcars.html" class="nav-button previous" aria-label="Projektnavigation">
-                        <img src="images/arrow left.png" alt="Pfeil nach link für Projektnavigation" class="arrow-icon">
-                        Zu X Cars Projekt
+                    <a href="xcars.html" class="prev-project-btn" aria-label="Vorheriges Projekt">
+                        <img src="images/arrow left.png" alt="Pfeil nach rechts für Projektnavigation"
+                            class="arrow-icon">
+                        Zu X Car's
                     </a>
-                    <a href="ip.html" class="nav-button next" aria-label="Projektnavigation">Zu IP Telekom Projekt
+
+                    <a href="ip.html" class="next-project-btn" aria-label="Nächstes Projekt">
+                        Zur IP Telekom
                         <img src="images/arrow right.png" alt="Pfeil nach rechts für Projektnavigation"
                             class="arrow-icon">
                     </a>
@@ -102,8 +114,9 @@
             </div>
         </section>
     </main>
-     <!-- Footer wird automatisch eingefügt -->
-     <script src="js/headerFooterLogic.js"></script>
+    <!-- Footer wird automatisch eingefügt -->
+    <script src="js/headerFooterLogic.js"></script>
+    <script src="js/projectGallery.js"></script>
 </body>
 
 </html>
