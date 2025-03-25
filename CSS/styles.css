@@ -695,8 +695,6 @@ footer {
     justify-content: flex-end;
     padding: 0 4rem;
     width: 100%;
-    max-width: 1200px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -705,14 +703,14 @@ footer {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project-navigation a {
-    
+    color: #000;
     text-decoration: none;
     font-family: 'Judson', serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     white-space: nowrap;
 }
@@ -720,22 +718,22 @@ footer {
 /* Button mit Pfeil */
 .prev-project-btn,
 .next-project-btn {
-    width: 3.5rem;
-    height: 3.5rem;
+
     background: #f5f5f5;
     border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
+    gap: 1rem;
     transition: all 0.3s ease;
 }
 
 /* Pfeil-Icon */
 .prev-project-btn .arrow-icon,
 .next-project-btn .arrow-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     transition: transform 0.3s ease;
 }
 

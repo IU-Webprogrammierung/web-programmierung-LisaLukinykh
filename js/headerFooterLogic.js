@@ -15,14 +15,35 @@ $(document).ready(function () {
             }
         });
     }
+
     // Klick-Handler für Navigation Links
     $('.nav-link').click(function(e) {
         e.preventDefault();
         const target = $(this).attr('href');
+        
+        // Wenn der Link mit # beginnt (Section auf aktueller Seite)
+        if (target.startsWith('#')) {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 800);
+        } 
+        // Wenn der Link zur Index-Seite mit Section verweist
+        else if (target.includes('index.html#')) {
+            window.location.href = target;
+        }
+        // Normale Links zu anderen Seiten
+        else {
+            window.location.href = target;
+        }
+    });
+
+    // Beim Laden der Seite prüfen, ob eine Section in der URL angegeben ist
+    if (window.location.hash) {
+        const target = window.location.hash;
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 800);
-    });
+    }
 
     // Beim Scrollen die aktive Markierung aktualisieren
     $(window).scroll(function () {

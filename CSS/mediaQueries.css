@@ -165,22 +165,27 @@
         font-size: 0.9rem;
     }
 
-     /* Projekts Seiten */
+    /* Projekts Seiten */
 
-     #Galerie {
+    #Galerie {
         padding: 6rem 1.5rem 1.5rem;
     }
 
     .slide {
-        min-width: 50%; 
+        min-width: 50%;
     }
 
     .slide img {
         max-height: 50vh;
     }
 
-    .prev-button { left: 1rem; }
-    .next-button { right: 1rem; }
+    .prev-button {
+        left: 1rem;
+    }
+
+    .next-button {
+        right: 1rem;
+    }
 
     .project-description {
         padding: 0 2rem;
@@ -378,6 +383,7 @@
     .card-link {
         font-size: 0.75rem;
     }
+
     .arrow-icon {
         width: 1rem;
         height: 1rem;
@@ -455,7 +461,8 @@
     }
 
     .slide {
-        min-width: 100%; /* Volle Breite auf Mobile */
+        min-width: 100%;
+        /* Volle Breite auf Mobile */
         padding: 0 0.5rem;
     }
 
@@ -468,8 +475,13 @@
         height: 2rem;
     }
 
-    .prev-button { left: 0.5rem; }
-    .next-button { right: 0.5rem; }
+    .prev-button {
+        left: 0.5rem;
+    }
+
+    .next-button {
+        right: 0.5rem;
+    }
 
     .nav-icon {
         width: 1rem;
@@ -477,26 +489,29 @@
     }
 
     .project-description {
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     .project-actions {
         justify-content: center;
         padding: 0;
-        width: 100%;
+
     }
 
     .project-navigation {
         flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+    }
 
+    .project-navigation a {
+        font-size: 1rem;
     }
-    .project-actions {
-        padding: 1.5rem 2rem;
-    }
-    
-    .next-project-btn {  
-        width: 3rem;
-        height: 3rem;
+
+    /* Button mit Pfeil */
+    .prev-project-btn,
+    .next-project-btn {
+        justify-content: center;
     }
 
     .contact-container {
