@@ -31,7 +31,7 @@
             <p>Hier findest Du spannende Projekte, Informationen über mich und Möglichkeiten, mich zu kontaktieren.</p>
             <div class="button-container">
                 <a href="#Über-mich" class="scroll-button" aria-label="Scrollen zu über mich">
-                    <img src="images/arrow left white.png" alt="Pfeil Icon" class="arrow-icon" id="arrow-icon">
+                    <img src="images/arrow left white.png" alt="Pfeil Icon" c class="scroll-arrow-icon">
                 </a>
             </div>
         </div>
@@ -128,14 +128,22 @@
             <div class="form-spalte">
                 <h2>Kontakt</h2>
                 <form action="#" method="post">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" name="name" pattern="[A-Za-zÄÖÜäöüß ]+" placeholder="Ihre Name">
+                    <!-- Floating Label Gruppe für Name -->
+                    <div class="floating-label-group">
+                        <input type="text" id="name" name="name" pattern="[A-Za-zÄÖÜäöüß ]+" placeholder=" " required>
+                        <label for="name">Name</label>
+                    </div>
+                    <!-- Floating Label Gruppe für E-Mail -->
+                    <div class="floating-label-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">E-Mail</label>
+                    </div>
 
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail">
-
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" placeholder="Schreiben Sie Ihre Nachricht"></textarea>
+                    <!-- Floating Label Gruppe für Nachricht -->
+                    <div class="floating-label-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">Nachricht</label>
+                    </div>
 
                     <button type="submit">Absenden</button>
                 </form>
