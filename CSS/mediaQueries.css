@@ -445,10 +445,13 @@
         min-height: calc(100vh - 4rem);
         padding: 2rem 1rem 1rem;
     }
+    .gallery-slider {
+        margin-bottom: 2rem;
+    }
 
     .slide {
         min-width: 100%;
-        /* Volle Breite auf Mobile */
+ 
         padding: 0 0.5rem;
     }
 
