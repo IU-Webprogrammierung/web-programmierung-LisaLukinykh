@@ -221,6 +221,7 @@
         width: 60%;
         padding: 1.5rem 2.5rem;
         position: absolute;
+        top: 1.5rem;
     }
 
     .burger-menu {
@@ -444,9 +445,6 @@
     #Galerie {
         min-height: calc(100vh - 4rem);
         padding: 2rem 1rem 1rem;
-    }
-    .gallery-slider {
-        margin-bottom: 2rem;
     }
 
     .slide {
