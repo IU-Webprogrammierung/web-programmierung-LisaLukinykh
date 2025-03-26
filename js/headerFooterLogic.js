@@ -1,8 +1,21 @@
 $(document).ready(function () {
+    // Hilfsfunktion um die Startseite zu erkennen
+    function isIndexPage() {
+        return window.location.pathname.endsWith('index.html') || 
+               window.location.pathname.endsWith('/');
+    }
+
+    //  Navigation-Links auf Nicht-Index-Seiten
+    if (!isIndexPage()) {
+        $('.nav-link[href^="#"]').each(function() {
+            const sectionId = $(this).attr('href');
+            $(this).attr('href', 'index.html' + sectionId);
+        });
+    }
+
     // Funktion, um den aktiven Link zu unterstreichen (nur auf index.html)
     function highlightActiveLink() {
-  
-        if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+        if (isIndexPage()) {
             $('.nav-link').removeClass('active');
 
             // Durchlaufe alle Sections
@@ -13,7 +26,8 @@ $(document).ready(function () {
 
                 // Wenn die Scroll-Position innerhalb des Abschnitts liegt
                 if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
-                    $('.nav-link[href="#' + $(this).attr('id') + '"]').addClass('active');
+                    $(`.nav-link[href="#${$(this).attr('id')}"], .nav-link[href="index.html#${$(this).attr('id')}"]`)
+                        .addClass('active');
                 }
             });
         }
@@ -26,14 +40,14 @@ $(document).ready(function () {
         
         // Wenn der Link mit # beginnt (Section auf aktueller Seite)
         if (target.startsWith('#')) {
-            // Wenn wir auf der Index-Seite sind, scrollen wir zur Section
-            if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+            if (isIndexPage()) {
                 $('html, body').animate({
                     scrollTop: $(target).offset().top
-                }, 800);
-            } 
-            // Wenn wir auf einer anderen Seite sind, gehen wir zur Index-Seite mit der Section
-            else {
+                }, 800, function() {
+                    // URL ohne Neuladen aktualisieren
+                    window.history.replaceState(null, null, target);
+                });
+            } else {
                 window.location.href = 'index.html' + target;
             }
         } 
@@ -44,17 +58,14 @@ $(document).ready(function () {
     });
 
     // Beim Laden der Seite prüfen, ob eine Section in der URL angegeben ist (nur auf index.html)
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
-        if (window.location.hash) {
-            const target = window.location.hash;
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 800);
-        }
+    if (isIndexPage() && window.location.hash) {
+        $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+        }, 800);
     }
 
     // Beim Scrollen die aktive Markierung aktualisieren (nur auf index.html)
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+    if (isIndexPage()) {
         $(window).scroll(function () {
             highlightActiveLink();
         });
