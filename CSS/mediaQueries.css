@@ -52,7 +52,7 @@
         height: 6rem;
     }
 
-    .scroll-arrow-icon{
+    .scroll-arrow-icon {
         width: 2rem;
         height: 2.3rem;
     }
@@ -477,6 +477,10 @@
 
     .project-description {
         padding: 0 1.5rem;
+    }
+
+    .project-description p {
+        text-align: center;
     }
 
     .project-actions {
